@@ -20,13 +20,13 @@ const HomeSectionCarousel = ({data,sectionName}) => {
 
   const items = data.slice(0, 10).map((item) => <HomeSectionCard product={item} />);
   return (
-    <div className=" border">
+    <div className="border">
       <h2 className="text-2xl font-extrabold text-gray-800 py-5">{sectionName}</h2>
       <div className="relative p-5">
         <AliceCarousel
           items={items}
           disableButtonsControls
-          responsive={responsive}
+          responsive={responsive} 
           disableDotsControls
           onSlideChanged={syncActiveIndex}
           activeIndex={activateIndex}
